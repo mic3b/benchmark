@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/**
+ * Design tokens — names are the source of truth for Tailwind utilities.
+ *
+ * `--color-X` → `bg-X`, `text-X`, `border-X`, `accent-X`, `from-X`, `to-X`,
+ * `fill-X`, `stroke-X`, etc.
+ * `--shadow-X` → `shadow-X`.
+ *
+ * Keep in sync with `src/lib/tokens.ts` (used by SVG fills in charts).
+ */
+@theme {
+  --color-brand: #4318ff;
+  --color-brand-hover: #3713cc;
+  --color-brand-light: #868cff;
+  --color-accent-sky: #39b8ff;
+  --color-accent-cyan: #6ad2ff;
+
+  --color-heading: #2b3674;
+  --color-body: #707eae;
+  --color-muted: #a3aed0;
+
+  --color-page: #f4f7fe;
+  --color-chip-hover: #e9efff;
+  --color-chip-dark: #fafcfe;
+  --color-line: #e0e5f2;
+  --color-track: #eff4fb;
+
+  --color-ok: #01b574;
+  --color-warn: #ffce20;
+  --color-bad: #ee5d50;
+  --color-bad-soft: #feefee;
+
+  --color-overlay: #111c44;
+
+  --shadow-card: 0 18px 40px -12px rgba(112, 144, 176, 0.18);
+  --shadow-card-soft: 0 18px 40px 0 rgba(112, 144, 176, 0.12);
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
